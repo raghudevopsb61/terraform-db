@@ -40,3 +40,6 @@ resource "aws_security_group" "redis" {
   }
 }
 
+output "test" {
+  value = aws_elasticache_cluster.redis
+}
